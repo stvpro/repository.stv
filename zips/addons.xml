@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.stvvideo" name="STV Movies" version="0.0.1" provider-name="STV">
+<addon id="plugin.video.stvpro"
+       name="[B][COLOR limegreen]STV[/COLOR][/B][B][COLOR white]pro[/COLOR][/B]"
+       version="2.5"
+       provider-name="stv">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">STVpro</summary>
+    <language>en</language>
+    <description lang="en">STVpro - #1 IN LIVE TV TO ORDER VISIT HTTP://STVIPTV.STVPRO.COM.</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.stvvideo" name="STV Movies" version="0.0.2" provider-name="STV">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.python.koding.aio" version="0.0.1"/>
